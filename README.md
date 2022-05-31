@@ -82,10 +82,3 @@ Series of steps are executed to verify this procedure:
 4. `Post Master` can start the departure by setting the status of the train to booked.
 5. This would assign the line to the booked train, update the parcel status to `in_progress`
 6. After 3 hours the parcels would be delivered and the train would be deleted
-
-## Assumptions:
-- No authorization was added, all end points are publicly accessible
-## If had more time
-- I would add pundit authorization
-- I would add JWT authentication
-- I would try to achieve 100% test coverage
