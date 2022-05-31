@@ -26,6 +26,8 @@ class Train < ApplicationRecord
 
   after_update_commit :depart_train!, :assign_line!
 
+  scope :available, -> { where(status: STATUSES_MAP[:not_booked]) }
+
   private
 
   # Acceptance Criteria: As soon as it's booked, it departs

@@ -3,8 +3,6 @@
 module Api
   module V1
     class TrainAvailabilitiesController < BaseController
-      include ExceptionHandler
-
       actions :create, :index, :show, :update, :destroy
 
       private

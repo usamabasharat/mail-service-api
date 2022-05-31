@@ -3,8 +3,6 @@
 module Api
   module V1
     class TrainParcelsController < BaseController
-      include ExceptionHandler
-
       actions :create, :index, :show, :update, :destroy
 
       private

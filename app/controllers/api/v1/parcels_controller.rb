@@ -3,8 +3,6 @@
 module Api
   module V1
     class ParcelsController < BaseController
-      include ExceptionHandler
-
       actions :create, :index, :show, :update, :destroy
 
       private
