@@ -9,6 +9,6 @@ class ParcelDeliveredStatus
   end
 
   def perform
-    parcels.each { |parcel| parcel.update!(status: STATUSES_MAP[:in_progress]) }
+    parcels.update_all(status: STATUSES_MAP[:in_progress])
   end
 end
